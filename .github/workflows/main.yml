@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: minActionOppskrift/ForsteOppskrift@v3
+        uses: ForsteOppskrift/minActionOppskrift@v3
         with:
           who-to-greet: 'Mona the Pat'
       # Use the output from the `hello` step
