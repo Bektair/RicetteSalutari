@@ -3,11 +3,8 @@ name: CI/CD
 on: push
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
   build:
     name: Build
-    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Set up Docker Buildx
