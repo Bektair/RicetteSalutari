@@ -1,0 +1,6 @@
+@RicetteSalutari_HostAddress = http://localhost:5184
+
+GET {{RicetteSalutari_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
