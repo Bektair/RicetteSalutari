@@ -18,10 +18,9 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push the Docker image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v5
         with:
-          context: .
-          file: ./app/RicetteSalutari/Dockerfile
+          context: "{{defaultContext}}:mysubdir"
           push: true
           tags: |
             ghcr.io/username/package:latest
