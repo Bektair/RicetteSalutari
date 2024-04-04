@@ -21,7 +21,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: ./RicetteSalutari/Dockerfile
+          file: ./app/RicetteSalutari/Dockerfile
           push: true
           tags: |
             ghcr.io/username/package:latest
