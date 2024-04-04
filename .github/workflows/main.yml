@@ -20,7 +20,7 @@ jobs:
       - name: Build and push the Docker image
         uses: docker/build-push-action@v5
         with:
-          context: "{{defaultContext}}:mysubdir"
+          context: "{{defaultContext}}:RicetteSalutari"
           push: true
           tags: |
             ghcr.io/username/package:latest
