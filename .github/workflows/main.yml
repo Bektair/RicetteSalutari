@@ -27,4 +27,6 @@ jobs:
           push: true
           tags: |
             ghcr.io/bektair/ricettesalutari:latest
-            ghcr.io/bektair/ricettesalutari:${{ github.sha }}
+            ghcr.io/bektair/ricettesalutari:${{ github.sha }}          
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
