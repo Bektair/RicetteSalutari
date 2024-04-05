@@ -25,5 +25,5 @@ jobs:
           context: "{{defaultContext}}:RicetteSalutari"
           push: true
           tags: |
-            ghcr.io/Bektair/RicetteSalutari:latest
-            ghcr.io/Bektair/RicetteSalutari:${{ github.sha }}
+            ghcr.io/bektair/ricettesalutari:latest
+            ghcr.io/bektair/ricettesalutari:${{ github.sha }}
