@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: "{{defaultContext}}"
-          file: ./ricetteSalutari/Dockerfile
+          file: ./ricettesalutari/Dockerfile
           push: true
           tags: |
             ghcr.io/bektair/ricettesalutari:latest
