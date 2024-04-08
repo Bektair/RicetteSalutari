@@ -28,5 +28,5 @@ jobs:
           tags: |
             ghcr.io/bektair/ricettesalutari:latest
             ghcr.io/bektair/ricettesalutari:${{ github.sha }}          
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          #cache-from: type=gha
+          #cache-to: type=gha,mode=max
