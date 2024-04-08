@@ -1,4 +1,4 @@
-namespace RicetteSalutari
+namespace ricettesalutari
 {
     public class WeatherForecast
     {

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: ricettesalutari-deployment
+  labels:
+    app: ricettesalutari
+spec:
+  selector:
+    matchLabels:
+      app: ricettesalutari ##Which pods to manage
+  template:
+    metadata:
+      labels:
+        app: ricettesalutari
+    spec:
+      containers:
+        - name: ricettesalutari
+          image: ghcr.io/bektair/ricettesalutari:1:0:4
+      imagePullSecrets:
+        - name: github-container-registry

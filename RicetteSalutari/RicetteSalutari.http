@@ -1,6 +1,6 @@
-@RicetteSalutari_HostAddress = http://localhost:5184
+@ricettesalutari_HostAddress = http://localhost:5095
 
-GET {{RicetteSalutari_HostAddress}}/weatherforecast/
+GET {{ricettesalutari_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
